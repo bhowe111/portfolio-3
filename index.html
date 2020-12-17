@@ -8,12 +8,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-  <!-- Stint Ultra Expanded Font -->
+  <!-- Work Sans Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Work+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles/main.css">
+  <!-- Themes -->
+  <link id="theme-style" rel="stylesheet" href="">
+
+  <!-- Main JS -->
+  <script defer src="scripts/app.js"></script>
 
   <title>Portfolio</title>
 </head>
@@ -46,14 +54,14 @@
           
         </div>
         <div class="left-column">
-          <img src="images/BHowe pic.png" id="profile-pic" alt="profile picture">
+          <img src="images/bhowe linkedin headshot circle.jpeg" id="profile-pic" alt="profile picture">
           <h5 style="text-align: center; line-height: 0;">Change Theme</h5>
 
           <div id="theme-options-wrapper">
-            <div id="light-mode" class="theme-dot"></div>
-            <div id="blue-mode" class="theme-dot"></div>
-            <div id="green-mode" class="theme-dot"></div>
-            <div id="purple-mode" class="theme-dot"></div>
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+            <div data-mode="gold" id="gold-mode" class="theme-dot"></div>
           </div>
 
           <p id="settings-note">Theme will be saved for your next visit</p>
@@ -112,8 +120,9 @@
       </div>
 
         <div class="social-links">
-          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam magnam hic consequatur explicabo animi, nisi neque sint ipsum omnis alias?</div>
-
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-twitter"></i>
         </div>
       </div>
       
@@ -122,14 +131,64 @@
 
   <section class="s1">
     <div class="main-container">
-      Portfolio
+      <h3 style="text-align: center";>Projects</h3>
+
+      <div class="post-wrapper">
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
+              <a href="post.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <section class="s2">
     <div class="main-container">
-      Contact
+      <h3 style="text-align: center;">Contact Me</h3>
+
+      <form id="contact-form">
+
+        <label>Name</label>
+        <input class="input-field" type="text" name="name">
+        <label>Subject</label>
+        <input class="input-field" type="text" name="subject">
+        <label>Email</label>
+        <input class="input-field" type="email" name="email">
+        <label>Message</label>
+        <textarea class="input-field" name="message"></textarea>
+
+        <input id="submit-btn" type="submit" value="Submit">
+      </form>
+
     </div>
   </section>
+
 </body>
 </html>
