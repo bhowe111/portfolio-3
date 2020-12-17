@@ -65,7 +65,7 @@ h6 { font-size: 16px;}
 
 .s2 {
   background-color: var(--secondaryColor);
-  border-bottom: 2px solid var(--borderColor);
+  border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
 
@@ -83,8 +83,6 @@ h6 { font-size: 16px;}
 }
 
 .intro-wrapper {
-  background-color: var(--secondaryColor);
-  border: 2px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
 
   box-shadow: 7px 9px 26px -5px rgba(0,0,0,0.79);
@@ -165,11 +163,9 @@ h6 { font-size: 16px;}
   display: block;
   margin: 0 auto;
 
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 350px;
   object-fit: cover;
-  border: 2px solid var(--borderColor);
-  border-radius: 50%;
 }
 
 /* ----------------------------- Themes */
@@ -239,7 +235,6 @@ h6 { font-size: 16px;}
 
 #preview {
   width: 300px;
-  border: 1.5px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
   position: relative;
