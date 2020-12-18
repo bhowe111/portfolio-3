@@ -104,6 +104,10 @@ h6 { font-size: 16px;}
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  min-height: 50px;
 
   background-color: var(--mainColor);
 }
@@ -123,24 +127,16 @@ h6 { font-size: 16px;}
   color: var(--mainText);
 }
 
-.dots-wrapper {
+.icon-wrapper {
   display: flex;
-  padding: 10px;
-}
-#dot-one {
-  background-color: #FC6058;
-}
-#dot-two {
-  background-color: #FEC02F;
-}
-#dot-three {
-  background-color: #2ACA3E;
+  padding-left: 10px;
+  max-height: 50px;
+  max-width: 50px;
 }
 
-.browser-dot {
-  background-color: #000;
-  height: 15px;
-  width: 15px;
+.browser-icon {
+  max-height: 25px;
+  max-width: 25px;
   border-radius: 50%;
 
   margin: 5px;
@@ -198,14 +194,8 @@ h6 { font-size: 16px;}
 #light-mode {
   background-color: #fff;
 }
-#blue-mode {
-  background-color: #1d3c45;
-}
-#green-mode {
-  background-color: #78866b;
-}
 #gold-mode {
-  background-color: #ffdf6c;
+  background-color: #ffd700;
 }
 
 #settings-note {
@@ -343,9 +333,9 @@ h6 { font-size: 16px;}
 
 /* ----------------------------- Responsiveness */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
   .main-container {
-    width: 95%;
+    width: 100%;
   }
 }
 

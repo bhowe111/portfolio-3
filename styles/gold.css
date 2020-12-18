@@ -1,5 +1,5 @@
 :root {
-  --mainText: #ffdf6c;
+  --mainText: #ffd700;
   --secondaryText: #fff;
 
   --borderColor: #c6c6c6;
@@ -12,5 +12,5 @@
   --previewBg:#707070cc;
   --previewShadow: #757575;
 
-  --buttonColor: #ffdf6c;
+  --buttonColor: #ffd700;
 }
