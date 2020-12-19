@@ -21,12 +21,10 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-
 }
 
 body * {
   transition: 0.3s;
-
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -55,6 +53,56 @@ h4 { font-size: 22px;}
 h5 { font-size: 18px;}
 h6 { font-size: 16px;}
 
+.main-container {
+  height: 100vh;
+  width: 1200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  margin: 0 auto;
+}
+
+/* ----------------------------- Background Image */
+/* Study of Paulo Cunha codepen */
+.background-image {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  background: rgba(0, 0, 0, 0.228);
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* This moves pseudo-element away from camera, then scales back up to fill viewport. */
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg1::after {
+  background-image: url("../images/portfolio-bkg-crop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ----------------------------- Content */
+.content {
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  height: 100%
+}
+
 /* ----------------------------- Sections */
 
 .s1 {
@@ -69,17 +117,12 @@ h6 { font-size: 16px;}
   overflow: auto;
 }
 
-.main-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .greeting-wrapper {
   display: grid;
-
-  justify-content: center;
+  justify-content: right;
   align-content: center;
   min-height: 10rem;
+  width: 95%;
 }
 
 .intro-wrapper {
@@ -105,9 +148,9 @@ h6 { font-size: 16px;}
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
-  min-height: 50px;
+  min-height: 70px;
 
   background-color: var(--mainColor);
 }
@@ -135,10 +178,9 @@ h6 { font-size: 16px;}
 }
 
 .browser-icon {
-  max-height: 25px;
-  max-width: 25px;
-  border-radius: 50%;
-
+  height: 50px;
+  width: 50px;
+  padding-left: 10px;
   margin: 5px;
 
   box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.79);
