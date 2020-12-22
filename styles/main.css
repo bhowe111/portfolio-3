@@ -1,16 +1,16 @@
 :root {
-  --mainText: #0c0a0a;
+  --mainText: #fff;
   --secondaryText: #363c42;
 
-  --borderColor: #c1c1c1;
+  --borderColor: #3c8498;
 
-  --mainColor: #eaeaea;
+  --mainColor: #000;
   --secondaryColor: #fff;
 
   --themeDotBorder: #242942;
 
-  --previewBg:rgba(251, 249, 243, 0.8);
-  --previewShadow: #f0ead6;
+  --previewBg:rgba(242, 244, 250, 0.507);
+  --previewShadow: #3c8498;
 
   --buttonColor: #000;
 }
@@ -91,9 +91,12 @@ h6 { font-size: 16px;}
 }
 
 .bg1::after {
-  background-image: url("../images/bkgs/ams-bkg-blur-dark-hatch.png");
+  background-color: #000;
+  background-image: url("../images/bkgs/ams-bkg-blur-color-grit.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
+  transition: background .3s linear;
 }
 
 /* ----------------------------- Content */
@@ -280,6 +283,7 @@ h6 { font-size: 16px;}
   padding-top: 50px;
   padding-bottom: 50px;
   gap: 100px;
+  margin-left: 30px;
 }
 
 #skills {
