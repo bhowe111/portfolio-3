@@ -21,6 +21,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body * {
@@ -72,7 +74,7 @@ h6 { font-size: 16px;}
   justify-content: center;
   color: #fff;
   text-shadow: 0 0 5px #000;
-  background: rgba(0, 0, 0, 0.228);
+  background: rgba(0, 0, 0, 0.118);
 }
 
 .parallax::after {
@@ -89,7 +91,7 @@ h6 { font-size: 16px;}
 }
 
 .bg1::after {
-  background-image: url("../images/portfolio-bkg-crop.png");
+  background-image: url("../images/bkgs/ams-bkg-blur-dark-hatch.png");
   background-repeat: no-repeat;
   background-position: center;
 }
