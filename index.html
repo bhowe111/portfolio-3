@@ -8,45 +8,74 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-  <!-- Stint Ultra Expanded Font -->
+  <!-- Work Sans Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Work+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles/main.css">
+  <!-- Themes -->
+  <link id="theme-style" rel="stylesheet" href="">
+
+  <!-- Main JS -->
+  <script defer src="scripts/app.js"></script>
 
   <title>Portfolio</title>
 </head>
 <body>
-  <section class="s1">
-    <div class="main-container">
-      <div class="greeting-wrapper">
-        <h1>Brendan Howe, Web Developer</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, delectus.</p>
-        <a href="#">Link</a><br/>
+  <div class="main-container">
+    
+      <div class="nav-wrapper">
+
+        <a href="/">
+          <div class="icon-wrapper">
+            <img class="browser-icon" src="images/home-logo-nobg.png" alt="Home">
+          </div>
+        </a>
+
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        
       </div>
+      <!-- Background Image -->
+      <div class="background-image parallax bg1">
+        <div class="greeting-wrapper">
+          <h1>Brendan Howe, Web Developer</h1>
+        </div>
+
+      <!-- Content -->
+      <section class="s1">
+      <section class="content">
+      
 
       <div class="intro-wrapper">
-        <div class="nav-wrapper">
-          <div class="dots-wrapper">
-            <div class="browser-dot" id="dot-one"></div>
-            <div class="browser-dot" id="dot-two"></div>
-            <div class="browser-dot" id="dot-three"></div>
+        
+        <div class="left-column">
+          <!-- <img src="images/bhowe-headshot-nobg-bob-fringe-sq.png" id="profile-pic" alt="profile picture"> -->
+          <h5 style="text-align: center; line-height: 0;">Change Theme</h5>
+
+          <div id="theme-options-wrapper">
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="gold" id="gold-mode" class="theme-dot"></div>
           </div>
 
-          <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          
+          <p id="settings-note">Theme will be saved for your next visit</p>
         </div>
-        <div class="left-column">
-          Left column
-        </div>
+
         <div class="right-column">
-          Right column
+          <div id="preview-shadow">
+            <div id="preview">
+              <h3>What I Do</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusantium ut, unde iste labore dignissimos cum ratione ducimus odit consectetur?</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -54,20 +83,117 @@
 
   <section class="s2">
     <div class="main-container">
-      About
+
+      <div class="about-wrapper">
+        <div class="about-me">
+          <h4>More about me</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi dolorum molestias quae in nam!
+          </p>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dolorum magnam libero. Cum, modi officia.
+          </p>
+
+          <hr>
+
+          <h4>Skills and Experience</h4>
+
+          <p>Front-End developer focused on React and Django: <a target="_blank" href="resume-placeholder.pdf">Download Resume</a></p>
+
+        <div id="skills">
+          <ul>
+            <li>Django</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Postgres</li>
+            <li>HTML/CSS</li>
+          </ul>
+          <ul>
+            <li>Node</li>
+            <li>Express</li>
+            <li>SASS</li>
+            <li>SQL</li>
+            <li>Google Maps API</li>
+            <li>Heroku</li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="social-links">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+      
     </div>
   </section>
 
   <section class="s1">
     <div class="main-container">
-      Portfolio
+      <h3 style="text-align: center";>Projects</h3>
+
+      <div class="post-wrapper">
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
+              <a href="post.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <section class="s2">
     <div class="main-container">
-      Contact
+      <h3 style="text-align: center;">Contact Me</h3>
+
+      <form id="contact-form">
+
+        <label>Name</label>
+        <input class="input-field" type="text" name="name">
+        <label>Subject</label>
+        <input class="input-field" type="text" name="subject">
+        <label>Email</label>
+        <input class="input-field" type="email" name="email">
+        <label>Message</label>
+        <textarea class="input-field" name="message"></textarea>
+
+        <input id="submit-btn" type="submit" value="Submit">
+      </form>
+
     </div>
   </section>
+</section>
+</div>
+
+
 </body>
 </html>
