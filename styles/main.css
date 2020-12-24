@@ -1,6 +1,6 @@
 :root {
-  --mainText: #fff;
-  --secondaryText: #363c42;
+  --mainText: #04e0e0;
+  --secondaryText: #fff;
 
   --borderColor: #3c8498;
 
@@ -23,6 +23,8 @@ html, body {
   font-family: 'Raleway', sans-serif;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: ease-in;
 }
 
 body * {
@@ -48,21 +50,30 @@ ul {
   list-style: none;
 }
 
-h1 { font-size: 50px;}
-h2 { font-size: 36px;}
-h3 { font-size: 28px;}
-h4 { font-size: 22px;}
-h5 { font-size: 18px;}
-h6 { font-size: 16px;}
+h1 { font-size: 80px; margin-block-start: 10px; margin-block-end: 10px;}
+h2 { font-size: 45px; margin-block-start: 10px; margin-block-end: 10px;}
+h3 { font-size: 38px; margin-block-start: 5px; margin-block-end: 5px;}
+h4 { font-size: 30px;}
+h5 { font-size: 26px;}
+h6 { font-size: 20px;}
 
-.main-container {
+.top-container {
   height: 100vh;
-  width: 1200px;
+  width: 100vw;
+  margin: 0 auto;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
-  margin: 0 auto;
 }
+
+/* .main-container {
+  height: 100vh;
+  width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
+
 
 /* ----------------------------- Background Image */
 /* Study of Paulo Cunha codepen */
@@ -100,6 +111,129 @@ h6 { font-size: 16px;}
 }
 
 /* ----------------------------- Content */
+
+.greeting-wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.subheading {
+  position: absolute;
+  bottom: 20vh;
+  right: 3vw;
+}
+/* Deconstructed text */
+
+.deconstructed {
+    position: relative;
+    margin: auto;
+    min-width: 85vw;
+    height: 0.95em;
+    color: transparent;
+    font-size: 8vw;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.03em;
+  }
+  
+  .deconstructed > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    color: var(--mainText);
+  }
+  
+  .deconstructed > div:nth-child(1) {
+    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+    mask-image: linear-gradient(black 25%, transparent 25%);
+    animation: deconstructed1 5s 1 forwards;
+  }
+  
+  .deconstructed > div:nth-child(2) {
+    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    animation: deconstructed2 5s 1 forwards;
+  }
+  
+  .deconstructed > div:nth-child(3) {
+     -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    animation: deconstructed3 5s 1 forwards;
+  }
+  
+  .deconstructed > div:nth-child(4) {
+     -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+    mask-image: linear-gradient(transparent 75%, black 75%);
+    animation: deconstructed4 5s 1 forwards;
+  }
+  
+  @keyframes deconstructed1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    26% {
+      transform: translateX(30%);
+    }
+    83% {
+      transform: translateX(30.1%);
+    }
+    100% {
+      transform: translateX(30%);
+    }
+  }
+  
+  @keyframes deconstructed2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    24% {
+      transform: translateX(30.5%);
+    }
+    82% {
+      transform: translateX(30.2%);
+    }
+    100% {
+      transform: translateX(30%);
+    }
+  }
+  
+  @keyframes deconstructed3 {
+    0% {
+      transform: translateX(-100%);
+    }
+    22% {
+      transform: translateX(30%);
+    }
+    81% {
+      transform: translateX(30%);
+    }
+    100% {
+      transform: translateX(30%);
+    }
+  }
+  
+  @keyframes deconstructed4 {
+    0% {
+      transform: translateX(-100%);
+    }
+    20% {
+      transform: translateX(30%);
+    }
+    80% {
+      transform: translateX(30.1%);
+    }
+    100% {
+      transform: translateX(30%);
+    }
+  }
+
+
 .content {
   margin: 0 auto;
   box-sizing: border-box;
@@ -120,14 +254,6 @@ h6 { font-size: 16px;}
   background-color: var(--secondaryColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
-}
-
-.greeting-wrapper {
-  display: grid;
-  justify-content: right;
-  align-content: center;
-  min-height: 10rem;
-  width: 95%;
 }
 
 .intro-wrapper {
