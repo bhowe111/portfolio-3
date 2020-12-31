@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Raleway Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- Raleway Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Work Sans Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Work Sans Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Rajdhani Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- Themes -->
+    <link id="theme-style" rel="stylesheet" href="" />
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- Themes -->
-  <link id="theme-style" rel="stylesheet" href="">
+    <!-- Main JS -->
+    <script defer src="scripts/app.js"></script>
 
-  <!-- Main JS -->
-  <script defer src="scripts/app.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <a href="/">
+        <div class="icon-wrapper">
+          <img
+            class="browser-icon"
+            src="images/home-logo-nobg.png"
+            alt="Home"
+          />
+        </div>
+      </a>
 
-  <title>Portfolio</title>
-</head>
-<body>
-  
-  <div class="nav-wrapper">
-    
-    <a href="/">
-      <div class="icon-wrapper">
-        <img class="browser-icon" src="images/home-logo-nobg.png" alt="Home">
-      </div>
-    </a>
-    
-    <ul class="navigation">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    
-  </div>
-      <div class="top-container">
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/brendan-howe/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/bhowe111"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="top-container">
       <!-- Background Image -->
       <div class="background-image parallax bg1">
         <div class="greeting-wrapper">
@@ -57,155 +74,169 @@
             <div>BRENDAN HOWE</div>
             <div>BRENDAN HOWE</div>
           </div>
-        
-        <h2 class="subheading">Web Developer</h2>
+
+          <h2 class="subheading">Front-End Web Developer</h2>
+        </div>
       </div>
-    </div>
 
       <!-- Content -->
       <section class="s1">
-      <section class="content">
-      
+        <section class="content">
+          <div class="intro-wrapper">
+            <div class="left-column">
+              <h5 style="text-align: center; line-height: 0">Change Theme</h5>
 
-      <div class="intro-wrapper">
-        
-        <div class="left-column">
-          <h5 style="text-align: center; line-height: 0;">Change Theme</h5>
+              <div id="theme-options-wrapper">
+                <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                <div data-mode="gold" id="gold-mode" class="theme-dot"></div>
+              </div>
+            </div>
 
-          <div id="theme-options-wrapper">
-            <div data-mode="light" id="light-mode" class="theme-dot"></div>
-            <div data-mode="gold" id="gold-mode" class="theme-dot"></div>
-          </div>
-
-          <p id="settings-note">Theme will be saved for your next visit</p>
-        </div>
-
-        <div class="right-column">
-          <div id="preview-shadow">
-            <div id="preview">
+            <div class="right-column">
               <h3>What I Do</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusantium ut, unde iste labore dignissimos cum ratione ducimus odit consectetur?</p>
+              <p>I make things that go on the Internet.<br /></p>
             </div>
           </div>
-        </div>
-      </div>
-  </section>
+        </section>
 
-  <section class="s2">
-    <div class="main-container">
+        <section class="s2">
+          <div class="main-container">
+            <div class="about-wrapper">
+              <div class="panel">
+                <h2 id="about" style="text-align: center" ;>More about me</h2>
+                <p>
+                  Front-end junior web developer. Experienced in gathering,
+                  analyzing and compiling information from disparate resources
+                  into engaging products. My background in the service industry,
+                  education and nonprofit radio informs my problem-solving
+                  approach of doing more with less.
+                </p>
 
-      <div class="about-wrapper">
-        <div class="panel">
-          <h2 id="about" style="text-align: center";>More about me</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi dolorum molestias quae in nam!
-          </p>
+                <p>
+                  I write, conduct, record and produce interviews with
+                  innovators in business technology and the arts. I also play
+                  music and climb rocks.
+                </p>
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dolorum magnam libero. Cum, modi officia.
-          </p>
+                <hr />
 
-          <hr>
+                <h3 style="text-align: center" ;>Skills and Experience</h3>
 
-          <h3 style="text-align: center";>Skills and Experience</h3>
+                <p>
+                  Front-End developer focused on React and Django:
+                  <a target="_blank" href="resume-placeholder.pdf"
+                    >Download Resume</a
+                  >
+                </p>
 
-          <p>Front-End developer focused on React and Django: <a target="_blank" href="resume-placeholder.pdf">Download Resume</a></p>
+                <div id="skills">
+                  <ul>
+                    <li>Django</li>
+                    <li>Python</li>
+                    <li>React</li>
+                    <li>React Native</li>
+                    <li>JavaScript</li>
+                    <li>SASS</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                  <ul>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>Postgres</li>
+                    <li>SQL</li>
+                    <li>Google Maps API</li>
+                    <li>Google Analytics</li>
+                    <li>Heroku</li>
+                  </ul>
+                </div>
+              </div>
 
-        <div id="skills">
-          <ul>
-            <li>Django</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Postgres</li>
-            <li>HTML/CSS</li>
-          </ul>
-          <ul>
-            <li>Node</li>
-            <li>Express</li>
-            <li>SASS</li>
-            <li>SQL</li>
-            <li>Google Maps API</li>
-            <li>Heroku</li>
-          </ul>
-        </div>
-      </div>
+              <div class="skillz"></div>
+            </div>
+          </div>
+        </section>
 
-        <div class="social-links">
-          <i class="fab fa-github"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-twitter"></i>
-        </div>
-      </div>
-      
+        <section class="s1">
+          <div class="panel">
+            <h2 id="projects" style="text-align: center" ;>Projects</h2>
+
+            <div class="post-wrapper">
+              <div>
+                <div class="post">
+                  <img
+                    class="thumbnail"
+                    src="https://picsum.photos/200"
+                    alt="project one"
+                  />
+                  <div class="post-preview">
+                    <h4 class="post-title">Post Title</h4>
+                    <p class="post-intro">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Dicta, unde.
+                    </p>
+                    <a href="post.html">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="post">
+                  <img
+                    class="thumbnail"
+                    src="https://picsum.photos/200"
+                    alt="project one"
+                  />
+                  <div class="post-preview">
+                    <h4 class="post-title">Post Title</h4>
+                    <p class="post-intro">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Dicta, unde.
+                    </p>
+                    <a href="post.html">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="post">
+                  <img
+                    class="thumbnail"
+                    src="https://picsum.photos/200"
+                    alt="project one"
+                  />
+                  <div class="post-preview">
+                    <h4 class="post-title">Post Title</h4>
+                    <p class="post-intro">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Dicta, unde.
+                    </p>
+                    <a href="post.html">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="s2">
+          <div class="panel">
+            <h2 id="contact" style="text-align: center">Contact Me</h2>
+
+            <form id="contact-form">
+              <label>Name</label>
+              <input class="input-field" type="text" name="name" />
+              <label>Subject</label>
+              <input class="input-field" type="text" name="subject" />
+              <label>Email</label>
+              <input class="input-field" type="email" name="email" />
+              <label>Message</label>
+              <textarea class="input-field" name="message"></textarea>
+
+              <input id="submit-btn" type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </section>
     </div>
-  </section>
-
-  <section class="s1">
-    <div class="main-container">
-      <h2 id="projects" style="text-align: center";>Projects</h2>
-
-      <div class="post-wrapper">
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
-            <div class="post-preview">
-              <h4 class="post-title">Post Title</h4>
-              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
-              <a href="post.html">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
-            <div class="post-preview">
-              <h4 class="post-title">Post Title</h4>
-              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
-              <a href="post.html">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="post">
-            <img class="thumbnail" src="https://picsum.photos/200" alt="project one">
-            <div class="post-preview">
-              <h4 class="post-title">Post Title</h4>
-              <p class="post-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.</p>
-              <a href="post.html">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="s2">
-    <div class="main-container">
-      <h2 id="contact" style="text-align: center;">Contact Me</h2>
-
-      <form id="contact-form">
-
-        <label>Name</label>
-        <input class="input-field" type="text" name="name">
-        <label>Subject</label>
-        <input class="input-field" type="text" name="subject">
-        <label>Email</label>
-        <input class="input-field" type="email" name="email">
-        <label>Message</label>
-        <textarea class="input-field" name="message"></textarea>
-
-        <input id="submit-btn" type="submit" value="Submit">
-      </form>
-
-    </div>
-  </section>
-</section>
-</div>
-
-
-</body>
+  </body>
 </html>
