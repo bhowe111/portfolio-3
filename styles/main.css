@@ -1,8 +1,8 @@
 :root {
   --mainText: #04e0e0;
-  --secondaryText: #fff;
+  --secondaryText: #c3c3c3;
 
-  --borderColor: #3c8498;
+  --borderColor: #02a164;
 
   --mainColor: #000;
   --secondaryColor: #fff;
@@ -10,7 +10,7 @@
   --themeDotBorder: #242942;
 
   --previewBg: rgba(242, 244, 250, 0.507);
-  --previewShadow: #3c8498;
+  --previewShadow: #00bdcaa1;
 
   --buttonColor: #000;
 }
@@ -70,13 +70,13 @@ h1 {
 }
 h2 {
   font-size: 45px;
-  margin-block-start: 10px;
-  margin-block-end: 10px;
+  margin-block-start: 50px;
+  margin-block-end: 35px;
 }
 h3 {
   font-size: 38px;
-  margin-block-start: 5px;
-  margin-block-end: 5px;
+  margin-block-start: 50px;
+  margin-block-end: 35px;
 }
 h4 {
   font-size: 30px;
@@ -222,7 +222,7 @@ h6 {
   26% {
     transform: translateX(30%);
   }
-  83% {
+  63% {
     transform: translateX(30.1%);
   }
   100% {
@@ -237,7 +237,7 @@ h6 {
   24% {
     transform: translateX(30.5%);
   }
-  82% {
+  62% {
     transform: translateX(30.2%);
   }
   100% {
@@ -252,7 +252,7 @@ h6 {
   22% {
     transform: translateX(30%);
   }
-  81% {
+  61% {
     transform: translateX(30%);
   }
   100% {
@@ -267,7 +267,7 @@ h6 {
   20% {
     transform: translateX(30%);
   }
-  80% {
+  60% {
     transform: translateX(30.1%);
   }
   100% {
@@ -318,25 +318,24 @@ h6 {
   border-bottom: 2px solid var(--borderColor);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: fixed;
   z-index: 3;
   width: 100%;
-  min-height: 70px;
+  min-height: 50px;
 
   background-color: var(--mainColor);
 }
 
-.social-links {
-  position: relative;
-  color: var(--mainText);
-  justify-content: flex-start;
+.navigation {
+  margin-right: 50px;
+  padding: 10px;
+  transition: 100;
 }
 
-.navigation {
-  margin: 0;
-  padding: 10px;
+.navigation theme {
+  /* margin-left: 50px; */
 }
 .navigation li {
   display: inline-block;
@@ -346,41 +345,12 @@ h6 {
 
 .navigation a {
   color: var(--mainText);
+  opacity: 0.7;
 }
 
-.icon-wrapper {
-  display: flex;
-  padding-left: 10px;
-  max-height: 50px;
-  max-width: 50px;
-}
-
-.browser-icon {
-  height: 50px;
-  width: 50px;
-  padding-left: 10px;
-  margin: 5px;
-
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.79);
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.79);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.79);
-}
-
-/* ----------------------------- Profile Pic */
-
-.left-column {
-  grid-area: left-column;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#profile-pic {
-  display: block;
-  margin: 0 auto;
-
-  height: 350px;
-  width: 350px;
-  object-fit: cover;
+.navigation a:hover {
+  opacity: 1;
+  text-shadow: 2px 1.5px 0 var(--previewShadow);
 }
 
 /* ----------------------------- Themes */
@@ -417,12 +387,6 @@ h6 {
   background-color: #ffd700;
 }
 
-#settings-note {
-  font-size: 12px;
-  font-style: italic;
-  text-align: center;
-}
-
 /* ----------------------------- Preview */
 
 .right-column {
@@ -440,13 +404,19 @@ h6 {
   padding-top: 50px;
   padding-bottom: 50px;
   gap: 100px;
-  margin-left: 30px;
+  margin: 0 30px;
+}
+
+.about-wrapper panel p {
+  max-width: 80%;
+  margin: 0 50px;
 }
 
 #skills {
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--previewShadow);
+  border-bottom: 1px solid var(--borderColor);
+  border-top: 1px solid var(--borderColor);
 }
 
 /* ----------------------------- Projects */
@@ -457,6 +427,7 @@ h6 {
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 320px);
   padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .post {
@@ -486,47 +457,6 @@ h6 {
 .post-intro {
   color: #4b5156;
   font-size: 14px;
-}
-
-/* ----------------------------- Contact */
-
-#contact-form {
-  display: block;
-  max-width: 600px;
-  margin: 0 auto;
-  border: 1px solid var(--borderColor);
-  padding: 15px;
-  border-radius: 5px;
-  background-color: var(--mainColor);
-  margin-bottom: 50px;
-}
-
-#contact-form textarea {
-  min-height: 100px;
-  font-size: 14px;
-}
-
-.input-field {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: var(--secondaryColor);
-  border: 1px solid var(--borderColor);
-  border-radius: 5px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  font-size: 14px;
-}
-
-#submit-btn {
-  margin-top: 10px;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  color: #fff;
-  background-color: var(--buttonColor);
-  border: none;
 }
 
 /* ----------------------------- Responsiveness */

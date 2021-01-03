@@ -37,19 +37,13 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <div class="nav-wrapper">
-      <a href="/">
-        <div class="icon-wrapper">
-          <img
-            class="browser-icon"
-            src="images/home-logo-nobg.png"
-            alt="Home"
-          />
-        </div>
-      </a>
+    <div class="nav-wrapper"><p style="color: var(--mainText)">Change Theme</p>
+      <ul class="navigation theme">
+        <li data-mode="light" id="light-mode" class="theme-dot"></li>
+        <li data-mode="gold" id="gold-mode" class="theme-dot"></li>
+      </ul>
 
       <ul class="navigation">
-        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li>
@@ -80,37 +74,20 @@
       </div>
 
       <!-- Content -->
-      <section class="s1">
-        <section class="content">
-          <div class="intro-wrapper">
-            <div class="left-column">
-              <h5 style="text-align: center; line-height: 0">Change Theme</h5>
-
-              <div id="theme-options-wrapper">
-                <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                <div data-mode="gold" id="gold-mode" class="theme-dot"></div>
-              </div>
-            </div>
-
-            <div class="right-column">
-              <h3>What I Do</h3>
-              <p>I make things that go on the Internet.<br /></p>
-            </div>
-          </div>
-        </section>
 
         <section class="s2">
           <div class="main-container">
             <div class="about-wrapper">
               <div class="panel">
-                <h2 id="about" style="text-align: center" ;>More about me</h2>
+                <h2 style="text-align: center">About Me</h2>
                 <p>
-                  Front-end junior web developer. Experienced in gathering,
+                  I'm a front-end junior web developer. Experienced in gathering,
                   analyzing and compiling information from disparate resources
                   into engaging products. My background in the service industry,
                   education and nonprofit radio informs my problem-solving
                   approach of doing more with less.
                 </p>
+                <br>
 
                 <p>
                   I write, conduct, record and produce interviews with
@@ -118,13 +95,11 @@
                   music and climb rocks.
                 </p>
 
-                <hr />
 
                 <h3 style="text-align: center" ;>Skills and Experience</h3>
 
-                <p>
-                  Front-End developer focused on React and Django:
-                  <a target="_blank" href="resume-placeholder.pdf"
+                <p class="navigation" style="text-align: center">
+                  <a target="_blank" href="brendanhowe_resume.pdf"
                     >Download Resume</a
                   >
                 </p>
@@ -151,14 +126,13 @@
                 </div>
               </div>
 
-              <div class="skillz"></div>
-            </div>
+              
           </div>
         </section>
 
         <section class="s1">
           <div class="panel">
-            <h2 id="projects" style="text-align: center" ;>Projects</h2>
+            <h2 id="projects" style="text-align: center">Projects</h2>
 
             <div class="post-wrapper">
               <div>
@@ -169,10 +143,9 @@
                     alt="project one"
                   />
                   <div class="post-preview">
-                    <h4 class="post-title">Post Title</h4>
+                    <h4 class="post-title">GeoQuakes</h4>
                     <p class="post-intro">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Dicta, unde.
+                      A React app that utilizes information the US Geological Survey API to map the most recent earthquakes around the globe.
                     </p>
                     <a href="post.html">Learn More</a>
                   </div>
@@ -184,13 +157,12 @@
                   <img
                     class="thumbnail"
                     src="https://picsum.photos/200"
-                    alt="project one"
+                    alt="project two"
                   />
                   <div class="post-preview">
-                    <h4 class="post-title">Post Title</h4>
+                    <h4 class="post-title">Triptych</h4>
                     <p class="post-intro">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Dicta, unde.
+                      A full-stack React customizable art gallery.
                     </p>
                     <a href="post.html">Learn More</a>
                   </div>
@@ -202,17 +174,17 @@
                   <img
                     class="thumbnail"
                     src="https://picsum.photos/200"
-                    alt="project one"
+                    alt="project three"
                   />
                   <div class="post-preview">
-                    <h4 class="post-title">Post Title</h4>
+                    <h4 class="post-title">WhatsAgain</h4>
                     <p class="post-intro">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Dicta, unde.
+                      A full MERN stack WhatsApp Clone utilizing Pusher for simultaneous front-end updates of back-end info.
                     </p>
                     <a href="post.html">Learn More</a>
                   </div>
                 </div>
+                <a target="_blank" href="https://github.com/bhowe111"><p>Check out more projects on GitHub</p></a>
               </div>
             </div>
           </div>
@@ -220,20 +192,7 @@
 
         <section class="s2">
           <div class="panel">
-            <h2 id="contact" style="text-align: center">Contact Me</h2>
-
-            <form id="contact-form">
-              <label>Name</label>
-              <input class="input-field" type="text" name="name" />
-              <label>Subject</label>
-              <input class="input-field" type="text" name="subject" />
-              <label>Email</label>
-              <input class="input-field" type="email" name="email" />
-              <label>Message</label>
-              <textarea class="input-field" name="message"></textarea>
-
-              <input id="submit-btn" type="submit" value="Submit" />
-            </form>
+            <p style="text-align: center">© Brendan Howe 2021</p>
           </div>
         </section>
       </section>
