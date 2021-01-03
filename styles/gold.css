@@ -9,8 +9,16 @@
 
   --themeDotBorder: #707070;
 
-  --previewBg:#707070cc;
+  --previewBg: #707070cc;
   --previewShadow: #757575;
 
   --buttonColor: #ffd700;
+}
+
+.bg1::after {
+  background-color: #000;
+  background-image: url("../images/bkgs/ams-bkg-blur-dark-hatch.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
