@@ -334,9 +334,6 @@ h6 {
   transition: 100;
 }
 
-.navigation theme {
-  /* margin-left: 50px; */
-}
 .navigation li {
   display: inline-block;
   margin-right: 5px;
